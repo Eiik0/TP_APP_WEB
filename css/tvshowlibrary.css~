@@ -1,0 +1,8 @@
+
+.container {
+  border: 1px ridge #f00;	
+  box-sizing: 100px;
+  padding: .10rem;
+  display: flex;
+  flex-direction: column;
+}

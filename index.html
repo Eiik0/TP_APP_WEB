@@ -1,0 +1,108 @@
+ <!doctype html>
+<html lang="fr">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+    <title>TV-Show Library</title>
+  </head>
+  <body>
+    <div class="container">
+
+      <header class="bg-light text-primary text-center">
+        <h1>TV-Show Library</h1>
+      </header>
+
+      <nav class="navbar navbar-light bg-primary">
+        <a class="navbar-brand"></a>
+        <form class="form-inline">
+          <button class="btn bg-white text-primary">
+            <i class="fas fa-plus"></i>
+          </button>
+        </form>
+      </nav>
+
+      <div class="d-flex flex-column-reverse flex-md-row">
+        <div class="flex-fill">
+          <div class="container">
+            <div id="list" class="row">
+            </div>
+            <div class="text-center">
+            <div id="pagination" class="btn-group btn-group-toggle"></div>
+          </div>
+          </div>
+        </div>
+        <div class="d-flex flex-row flex-md-column bg-light">
+          <div class="card">
+            <div class="card-header">
+              Tri
+            </div>
+            <div class="card-body">
+              <div id="tri" class="btn-group btn-group-toggle" data-toggle="buttons">
+                <label class="btn btn-outline-primary active">
+                  <input type="radio" name="sort" value="name" checked>Nom
+                </label>
+                <label class="btn btn-outline-primary">
+                  <input type="radio" name="sort" value="score">Note
+                </label>
+              </div>
+
+              <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                <label class="btn btn-outline-primary active">
+                  <input type="radio" name="order" value="score">
+                  <i class="fas fa-angle-down"></i>
+                </label>
+                <label class="btn btn-outline-primary">
+                  <input type="radio" name="order" value="score">
+                  <i class="fas fa-angle-up"></i>
+                </label>
+              </div>
+
+
+            </div>
+          </div>
+
+          <div class="card flex-fill">
+            <div class="card-header">
+              Filtres Black
+              <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                <label class="btn btn-primary active">
+                  <input type="radio" name="filter" checked>
+                  <i class="fas fa-check-square"></i>
+                </label>
+                <label class="btn btn-primary">
+                  <input type="radio" name="filter">
+                  <i class="fas fa-square"></i>
+                </label>
+              </div>
+            </div>
+            <div>
+              <div>
+                <div>
+
+                </div id="genres" class = "container">
+              </div>
+              Les genres
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="js/tv-shows-library.js"></script>
+    <script src="js/tv-shows_front.include.js"></script>
+  </body>
+</html>
